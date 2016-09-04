@@ -1,0 +1,54 @@
+Coursera Capstone Course Project Presentation
+========================================================
+author: Anirban Dhar
+date: 09/04/2016
+
+Projct Presentation Overview
+========================================================
+
+This presentation is being created to present highlights of the prediction algorithm application created using Shiny as part of Coursera Capstone Course Project. 
+
+The presentation will have 3 parts:
+
+- Basic overview of the application 
+- Applied methods and models
+- Application screen shot
+
+Word Predictor Application
+========================================================
+
+Word Predictor Application has been developed using Shiny. Text data used to create a frequency dictionary and predict the next words comes from a corpus called [HC Corpora](http://www.corpora.heliohost.org/). Text mining and natural language processing was done using R packages:
+
+- The user interface of this application takes text input e.g. (**1**)
+- The field with the predicted next word refreshes instantaneously e.g. (**2**) 
+- The text input (**1**) continues to get displayed
+
+Applied Methods & Models
+========================================================
+
+The sample data obtined from the HC Corpora data site was cleaned by converting to lowercase, removing punctuation, links, white space, numbers and special characters. 
+
+Basic exploratory data analysis was done on input files. The data sample was then tokenized into n-grams. 
+
+In the fields of computational linguistics and probability, an n-gram is a contiguous sequence of n items from a given sequence of text or speech. Aggregated uni, bi and trigram frequency matrices have been transferred into frequency dictionaries.
+
+Finally, the resulting data frames are used to predict the next word based on the text input by a user.
+
+
+Application Screen Shot
+========================================================
+
+![alt text](AppScreenShot.png)
+
+
+
+Additional Information
+========================================================
+- The whole code of this application, as well as all the milestone report, related scripts, this presentation  etc. can be found in this GitHub repo: 
+
+  https://github.com/anirbandhar0214/Coursera-Data-Science-Capstone
+
+- The Shiny Word Predictor Application can be used via the following url
+
+  https://anirbandhar.shinyapps.io/Shiny/
+
